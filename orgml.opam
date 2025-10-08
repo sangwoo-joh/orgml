@@ -1,0 +1,21 @@
+opam-version: "2.0"
+maintainer: "Sangwoo Joh <work.sangwoo.joh@gmail.com>"
+authors: ["Sangwoo Joh <work.sangwoo.joh@gmail.com>"]
+license: "MIT"
+homepage: "https://github.com/sangwoo-joh/orgml"
+bug-reports: "https://github.com/sangwoo-joh/orgml/issues"
+build: [
+  ["dune" "build"]
+]
+
+depends: [
+  "ocaml" {>= "4.13"}
+  "dune" {>= "2.9.0"}
+  "sedlex" {>= "3.5"}
+  "menhir" {>= "20240715"}
+]
+
+synopsis: "An Org Syntax compliant parser for OCaml"
+description: """
+An Org Syntax compliant parser
+"""

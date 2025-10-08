@@ -1,0 +1,6 @@
+(library
+  (name orgml)
+  (public_name orgml)
+  (libraries
+    sedlex menhir)
+  (flags (:standard -safe-string -w -30)))
