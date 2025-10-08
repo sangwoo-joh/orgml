@@ -13,6 +13,10 @@ depends: [
   "dune" {>= "2.9.0"}
   "sedlex" {>= "3.5"}
   "menhir" {>= "20240715"}
+  "base" {>= "v0.15.0"}
+  "ppx_deriving" {>= "6.0"}
+  "ppx_sexp_conv" {>= "v0.16.0"}
+  "sexplib" {>= "v0.16.0"}
 ]
 
 synopsis: "An Org Syntax compliant parser for OCaml"

@@ -2,5 +2,10 @@
   (name orgml)
   (public_name orgml)
   (libraries
-    sedlex menhir)
+    sedlex base sexplib)
+  (preprocess (pps sedlex.ppx ppx_sexp_conv))
   (flags (:standard -safe-string -w -30)))
+
+(menhir
+  (modules parser)
+  (flags --explain))
